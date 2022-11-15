@@ -124,7 +124,7 @@ h1 {
     padding: 0;
 }
 
-.style-help-title {
+.style-title {
     font-family: Oranienbaum, sans-serif;
     text-transform: uppercase;
     text-align: center;
@@ -149,7 +149,7 @@ h1 {
     color: #6f6f6f;
 }
 
-.service-progress .container {
+.service-progress{
     padding: 0 200px;
 }
 
@@ -234,4 +234,107 @@ h1 {
     font-size: 14px;
     color: #ffffff;
     padding: 10px 20px;
+}
+
+.service-packages {
+    padding: 100px 0;
+}
+
+.service-packages .card-deck {
+    margin-top: 50px;
+}
+
+.service-packages .card {
+    border: 2px solid #e9e9e9;
+    border-radius: 0;
+    transition: all .3s;
+}
+
+.service-packages .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #aaaaaa;
+    border-color: #aaaaaa;
+}
+
+.service-packages .card-text {
+    margin-bottom: 0;
+}
+
+.card-item-block {
+    margin-bottom: 40px;
+}
+
+.prices {
+    display: block;
+    margin: 0 auto 50px auto;
+    font-size: 18px;
+    width: 22%;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.font-color-grey {
+    color: #adadad;
+}
+
+.mg-t-10 {
+    margin-top: 10px;
+}
+
+.card-price-old {
+    position: relative;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.card-price-old:before {
+    border-bottom: 2px solid #f2003a;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 50%;
+    transform: rotate(-7deg);
+}
+
+.card-price-sale {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-item-block .btn {
+    width: 100%;
+    padding: 15px 25px;
+}
+
+.btn-purple {
+    background-color: #f2003a;
+    border-color: #f2003a;
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.service-progress-item {
+    display: flex;
+    margin: 50px 0;
+}
+
+.service-progress-item-img {
+    width: 30%;
+    margin-right: 30px;
+}
+
+.service-progress-item-description {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    line-height: 20px;
+    color: #5a5a5a;
 }
