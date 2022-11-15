@@ -14,13 +14,73 @@
     font-weight: bold;
 }
 
+@font-face {
+    font-family: Oranienbaum;
+    src: url("../fonts/Oranienbaum-Regular.ttf");
+}
+
 body {
     font-family: Roboto, sans-serif;
+}
+
+h1 {
+    font-family: Oranienbaum, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
 }
 
 .header {
     position: absolute;
     top: 30px;
+    width: 100%;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu-right {
+    display: flex;
+}
+
+.nav {
+    font-family: Oranienbaum, sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.nav-item .nav-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-item .nav-link:hover {
+    color: #53b9f5;
+}
+
+.nav-item .nav-link:hover {
+    color: #53b9f5;
+}
+
+.nav-menu-right .nav-item .nav-link {
+    padding: 0.5rem 0.1rem;
+}
+
+.phone {
+    margin: 0 50px;
+    font-family: Oranienbaum, sans-serif;
+    text-align: end;
+}
+
+.phone a {
+    color: #ffffff;
+}
+
+.phone a:hover {
+    color: #53b9f5;
+    text-decoration: none;
 }
 
 .main {
@@ -29,6 +89,85 @@ body {
 
 .bg-main {
     background-image: url("../images/bg-main.png");
-    background-position: 200px;
-    background-size: cover;
-  }
+    background-size: inherit;
+    background-position: top;
+}
+
+.main .container {
+    max-width: 1440px;
+}
+
+.main h1 {
+    font-family: Oranienbaum, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.main h2 {
+    font-family: Oranienbaum, sans-serif;
+    font-size: 20px;
+    color: #a39151;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.style-help {
+    padding: 50px 0;
+}
+
+.style-help .container {
+    max-width: 1440px;
+    padding: 0;
+}
+
+.style-help-title {
+    font-family: Oranienbaum, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.style-help-info {
+    display: block;
+    margin: 50px 100px 20px 100px;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 25px;
+}
+
+.style-help-img {
+    width: 100%;
+}
+
+.title-img-style-help {
+    margin-top: 5px;
+    text-align: center;
+    color: #6f6f6f;
+}
+
+.service-progress .container {
+    padding: 0 200px;
+}
+
+.service-progress-title {
+    font-family: Oranienbaum, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.service-progress-description {
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: #606060;
+}
+
+.service-progress-description-block {
+    margin: 0 100px;
+    font-size: 18px;
+    color: #606060;
+}
+
