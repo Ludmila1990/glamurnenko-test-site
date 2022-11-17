@@ -1,11 +1,11 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 @font-face {
-    font-family: Roboto;
-    src: url("../fonts/Roboto.ttf");
+  font-family: Roboto;
+  src: url("../fonts/Roboto.ttf");
 }
 
 @font-face {
@@ -30,19 +30,41 @@ h1 {
     color: #ffffff;
 }
 
+button:focus {
+    outline: 0!important;
+    outline-color: transparent!important;
+    outline-width: 0!important;
+    outline-style: none!important;
+    box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
+}
+
 .header {
     position: absolute;
     top: 30px;
     width: 100%;
+    z-index: 1;
+}
+
+.header_fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #1d1d1d;
+    padding: 10px 0;
+}
+
+.header .container {
+    padding: 0;
+}
+
+.header .col-12 {
+    padding: 0;
 }
 
 .nav-menu {
     display: flex;
     justify-content: space-between;
-}
-
-.nav-menu-right {
-    display: flex;
 }
 
 .nav {
@@ -51,25 +73,54 @@ h1 {
     font-size: 20px;
 }
 
-.nav-item .nav-link {
+.header .nav-link {
     color: #ffffff;
     text-decoration: none;
 }
 
-.nav-item .nav-link:hover {
+.nav-link:hover {
     color: #53b9f5;
 }
 
-.nav-item .nav-link:hover {
-    color: #53b9f5;
+.nav-menu-right {
+    display: flex;
 }
 
-.nav-menu-right .nav-item .nav-link {
-    padding: 0.5rem 0.1rem;
+.social-network {
+    display: flex;
+    align-items: center;
+}
+
+.social-network-item {
+    margin-right: 5px;
+    height: 25px;
+    width: 25px;
+}
+
+.instagram {
+  height: 25px;
+  width: 25px;
+  background: url("../images/1438557260_inst_4.png");
+}
+
+.facebook {
+    height: 25px;
+    width: 25px;
+    background: url("../images/1438557245_ab_4.png");
+}
+
+.vk {
+    height: 25px;
+    width: 25px;
+    background: url("../images/1438423986_vk_3.png");
+}
+
+.instagram:hover, .facebook:hover, .vk:hover {
+    background-position: 25px;
 }
 
 .phone {
-    margin: 0 50px;
+    margin-left: 50px;
     font-family: Oranienbaum, sans-serif;
     text-align: end;
 }
@@ -83,10 +134,6 @@ h1 {
     text-decoration: none;
 }
 
-.main {
-    padding: 200px 0;
-}
-
 .bg-main {
     background-image: url("../images/bg-main.png");
     background-size: inherit;
@@ -94,7 +141,7 @@ h1 {
 }
 
 .main .container {
-    max-width: 1440px;
+    padding: 0;
 }
 
 .main h1 {
@@ -103,7 +150,6 @@ h1 {
     font-weight: bold;
     color: #ffffff;
     text-transform: uppercase;
-    margin-top: 50px;
     margin-bottom: 0;
 }
 
@@ -113,14 +159,15 @@ h1 {
     color: #a39151;
     text-transform: uppercase;
     text-decoration: underline;
+    margin-bottom: 200px;
 }
 
-.style-help {
-    padding: 50px 0;
+.logo {
+    margin-top: 200px;
+    margin-bottom: 100px;
 }
 
 .style-help .container {
-    max-width: 1440px;
     padding: 0;
 }
 
@@ -128,6 +175,7 @@ h1 {
     font-family: Oranienbaum, sans-serif;
     text-transform: uppercase;
     text-align: center;
+    margin-top: 50px;
 }
 
 .style-help-info {
@@ -141,6 +189,7 @@ h1 {
 
 .style-help-img {
     width: 100%;
+    cursor: pointer;
 }
 
 .title-img-style-help {
@@ -149,8 +198,8 @@ h1 {
     color: #6f6f6f;
 }
 
-.service-progress{
-    padding: 0 200px;
+.service-progress {
+    padding: 100px 200px 0 200px;
 }
 
 .service-progress-title {
@@ -209,7 +258,7 @@ h1 {
     font-size: 14px;
 }
 
-.td-info{
+.td-info {
     text-align: center;
     font-size: 12px;
 }
@@ -236,8 +285,9 @@ h1 {
     padding: 10px 20px;
 }
 
-.service-packages {
-    padding: 100px 0;
+.styles-books {
+    width: 100%;
+    margin-bottom: 50px;
 }
 
 .service-packages .card-deck {
@@ -321,6 +371,12 @@ h1 {
     color: #ffffff;
 }
 
+.btn-purple:hover {
+    background-color: #f77190;
+    border-color: #f77190;
+    color: #ffffff;
+}
+
 .service-progress-item {
     display: flex;
     margin: 50px 0;
@@ -337,4 +393,57 @@ h1 {
     font-size: 20px;
     line-height: 20px;
     color: #5a5a5a;
+}
+
+.bg-black {
+    background-color: #000000;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.footer {
+    padding: 50px 0;
+}
+
+.footer .container {
+    padding: 0;
+}
+
+.footer .nav {
+    margin-top: 20px;
+}
+
+.footer .nav-link {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: none;
+    padding: 0;
+}
+
+.footer .nav-link:hover {
+    color: #53b9f5;
+}
+
+.footer .btn {
+    display: block;
+    margin: 0 auto;
+    border-color: #ffffff;
+    border-radius: 0;
+    font-size: 14px;
+    padding: 0.4rem 0.8rem;
+}
+
+.btn-white {
+    background: none;
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.btn-white:hover {
+    background: #ffffff;
+    color: #000000;
 }
