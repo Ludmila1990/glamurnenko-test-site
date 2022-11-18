@@ -9,441 +9,568 @@
 }
 
 @font-face {
-    font-family: Roboto;
-    src: url("../fonts/Robotobold.ttf");
-    font-weight: bold;
+  font-family: Roboto;
+  src: url("../fonts/Robotobold.ttf");
+  font-weight: bold;
 }
 
 @font-face {
-    font-family: Oranienbaum;
-    src: url("../fonts/Oranienbaum-Regular.ttf");
+  font-family: Oranienbaum;
+  src: url("../fonts/Oranienbaum-Regular.ttf");
 }
 
 body {
-    font-family: Roboto, sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
 h1 {
-    font-family: Oranienbaum, sans-serif;
-    font-size: 36px;
-    font-weight: bold;
-    color: #ffffff;
+  font-family: Oranienbaum, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 button:focus {
-    outline: 0!important;
-    outline-color: transparent!important;
-    outline-width: 0!important;
-    outline-style: none!important;
-    box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
+  outline: 0!important;
+  outline-color: transparent!important;
+  outline-width: 0!important;
+  outline-style: none!important;
+  box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
 }
 
 .header {
-    position: absolute;
-    top: 30px;
-    width: 100%;
-    z-index: 1;
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  z-index: 1;
 }
 
 .header_fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    background-color: #1d1d1d;
-    padding: 10px 0;
-}
-
-.header .container {
-    padding: 0;
-}
-
-.header .col-12 {
-    padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #1d1d1d;
+  padding: 10px 0;
 }
 
 .nav-menu {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav {
-    font-family: Oranienbaum, sans-serif;
-    text-transform: uppercase;
-    font-size: 20px;
+  font-family: Oranienbaum, sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
 }
 
 .header .nav-link {
-    color: #ffffff;
-    text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .nav-link:hover {
-    color: #53b9f5;
+  color: #53b9f5;
 }
 
 .nav-menu-right {
-    display: flex;
+  display: flex;
 }
 
 .social-network {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .social-network-item {
-    margin-right: 5px;
-    height: 25px;
-    width: 25px;
+  margin-right: 5px;
+  width: 25px;
+  height: 25px;
 }
 
 .instagram {
-  height: 25px;
   width: 25px;
+  height: 25px;
   background: url("../images/1438557260_inst_4.png");
 }
 
 .facebook {
-    height: 25px;
-    width: 25px;
-    background: url("../images/1438557245_ab_4.png");
+  width: 25px;
+  height: 25px;
+  background: url("../images/1438557245_ab_4.png");
 }
 
 .vk {
-    height: 25px;
-    width: 25px;
-    background: url("../images/1438423986_vk_3.png");
+  width: 25px;
+  height: 25px;
+  background: url("../images/1438423986_vk_3.png");
 }
 
 .instagram:hover, .facebook:hover, .vk:hover {
-    background-position: 25px;
+  background-position: 25px;
 }
 
 .phone {
-    margin-left: 50px;
-    font-family: Oranienbaum, sans-serif;
-    text-align: end;
+  margin-left: 50px;
+  font-family: Oranienbaum, sans-serif;
+  text-align: end; 
 }
 
 .phone a {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .phone a:hover {
-    color: #53b9f5;
-    text-decoration: none;
+  color: #53b9f5;
+  text-decoration: none;
 }
 
 .bg-main {
-    background-image: url("../images/bg-main.png");
-    background-size: inherit;
-    background-position: top;
-}
-
-.main .container {
-    padding: 0;
+  background-image: url("../images/bg-main.png");
+  background-size: inherit;
+  background-position: top;
 }
 
 .main h1 {
-    font-family: Oranienbaum, sans-serif;
-    font-size: 25px;
-    font-weight: bold;
-    color: #ffffff;
-    text-transform: uppercase;
-    margin-bottom: 0;
+  margin-bottom: 0;
+  font-family: Oranienbaum, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 .main h2 {
-    font-family: Oranienbaum, sans-serif;
-    font-size: 20px;
-    color: #a39151;
-    text-transform: uppercase;
-    text-decoration: underline;
-    margin-bottom: 200px;
+  margin-bottom: 200px;
+  font-family: Oranienbaum, sans-serif;
+  font-size: 20px;
+  color: #a39151;
+  text-transform: uppercase;
+  text-decoration: underline;  
 }
 
 .logo {
-    margin-top: 200px;
-    margin-bottom: 100px;
-}
-
-.style-help .container {
-    padding: 0;
+  margin-top: 200px;
+  margin-bottom: 100px;
 }
 
 .style-title {
-    font-family: Oranienbaum, sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    margin-top: 50px;
+  margin-top: 50px;
+  font-family: Oranienbaum, sans-serif;
+  text-transform: uppercase;
+  text-align: center;  
 }
 
 .style-help-info {
-    display: block;
-    margin: 50px 100px 20px 100px;
-    font-size: 14px;
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 25px;
+  display: block;
+  margin: 50px 100px 20px 100px;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 25px;
 }
 
 .style-help-img {
-    width: 100%;
-    cursor: pointer;
+  width: 100%;
+  cursor: pointer;
 }
 
 .title-img-style-help {
-    margin-top: 5px;
-    text-align: center;
-    color: #6f6f6f;
+  margin-top: 5px;
+  text-align: center;
+  color: #6f6f6f;
 }
 
 .service-progress {
-    padding: 100px 200px 0 200px;
+  padding-top: 50px;
 }
 
 .service-progress-title {
-    font-family: Oranienbaum, sans-serif;
-    text-transform: uppercase;
-    margin-bottom: 30px;
+  margin-bottom: 30px;
+  font-family: Oranienbaum, sans-serif;
+  text-transform: uppercase;
 }
 
 .service-progress-description {
-    margin-bottom: 30px;
-    font-size: 18px;
-    color: #606060;
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: #606060;
 }
 
 .service-progress-description-block {
-    margin: 0 100px 50px 100px;
-    font-size: 18px;
-    color: #606060;
+  margin: 0 100px 50px 100px;
+  font-size: 18px;
+  color: #606060;
 }
 
 .service-progress .table {
-    background-color: #fce236;
-    border: 1px solid #eab60a;
-    font-family: Roboto, sans-serif;
-    font-weight: bold;
-    text-align: center;
+  background-color: #fce236;
+  border: 1px solid #eab60a;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  text-align: center;
 }
 
 .service-progress .table-bordered {
-    border-color: #eab60a;
+  border-color: #eab60a;
 }
 
 .service-progress .table .thead th {
-    border-bottom: 0;
+  border-bottom: 0;
 }
 
 .service-progress .table th {
-    border-color: #eab60a;
+  border-color: #eab60a;
 }
 
 .service-progress .table td {
-    border-color: #eab60a;
+  border-color: #eab60a;
 }
 
 .service-progress .thead {
-    background-color: #fac30d;
-    text-transform: uppercase;
-    font-size: 18px;
+  background-color: #fac30d;
+  text-transform: uppercase;
+  font-size: 18px;
 }
 
 .service-progress .table th:nth-child(1) {
-    text-align: left;
+  text-align: left;
 }
 
 .service-progress tbody {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .td-info {
-    text-align: center;
-    font-size: 12px;
+  text-align: center;
+  font-size: 12px;
 }
 
 .currency {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .currency-item {
-    border: 1px solid #000000;
-    padding: 3px 6px;
-    margin-right: 3px;
+  border: 1px solid #000000;
+  padding: 3px 6px;
+  margin-right: 3px;
 }
 
 .service-progress .btn-dark {
-    background-color: #000000;
-    border-color: #000000;
-    font-family: Roboto, sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #ffffff;
-    padding: 10px 20px;
+  background-color: #000000;
+  border-color: #000000;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #ffffff;
+  padding: 10px 20px;
 }
 
 .styles-books {
-    width: 100%;
-    margin-bottom: 50px;
+  width: 100%;
+  margin-bottom: 50px;
 }
 
 .service-packages .card-deck {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .service-packages .card {
-    border: 2px solid #e9e9e9;
-    border-radius: 0;
-    transition: all .3s;
+  border: 2px solid #e9e9e9;
+  border-radius: 0;
+  transition: all .3s;
 }
 
 .service-packages .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 30px #aaaaaa;
-    border-color: #aaaaaa;
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #aaaaaa;
+  border-color: #aaaaaa;
 }
 
 .service-packages .card-text {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .card-item-block {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .prices {
-    display: block;
-    margin: 0 auto 50px auto;
-    font-size: 18px;
-    width: 22%;
+  display: block;
+  margin: 0 auto 50px auto;
+  width: 50%;
+  font-size: 16px;
 }
 
 .align-center {
-    text-align: center;
+  text-align: center;
 }
 
 .bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .font-color-grey {
-    color: #adadad;
+  color: #adadad;
 }
 
 .mg-t-10 {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .card-price-old {
-    position: relative;
-    margin-bottom: 0;
-    text-align: center;
+  position: relative;
+  margin-bottom: 0;
+  text-align: center;
 }
 
 .card-price-old:before {
-    border-bottom: 2px solid #f2003a;
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 50%;
-    transform: rotate(-7deg);
+  border-bottom: 2px solid #f2003a;
+  position: absolute;
+  content: "";
+  width: 35%;
+  height: 50%;
+  transform: rotate(-7deg);
 }
 
 .card-price-sale {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .card-item-block .btn {
-    width: 100%;
-    padding: 15px 25px;
+  width: 100%;
+  padding: 15px 25px;
 }
 
 .btn-purple {
-    background-color: #f2003a;
-    border-color: #f2003a;
-    font-family: Roboto, sans-serif;
-    text-transform: uppercase;
-    color: #ffffff;
+  background-color: #f2003a;
+  border-color: #f2003a;
+  font-family: Roboto, sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .btn-purple:hover {
-    background-color: #f77190;
-    border-color: #f77190;
-    color: #ffffff;
+  background-color: #f77190;
+  border-color: #f77190;
+  color: #ffffff;
 }
 
 .service-progress-item {
-    display: flex;
-    margin: 50px 0;
+  display: flex;
+  margin: 50px 0;
 }
 
 .service-progress-item-img {
-    width: 30%;
-    margin-right: 30px;
+  width: 30%;
+  margin-right: 30px;
 }
 
 .service-progress-item-description {
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-    line-height: 20px;
-    color: #5a5a5a;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  line-height: 20px;
+  color: #5a5a5a;
 }
 
 .bg-black {
-    background-color: #000000;
+  background-color: #000000;
 }
 
 .bg-white {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .footer {
-    padding: 50px 0;
-}
-
-.footer .container {
-    padding: 0;
+  padding: 50px 0;
 }
 
 .footer .nav {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .footer .nav-link {
-    font-family: Roboto, sans-serif;
-    font-size: 14px;
-    color: #ffffff;
-    text-transform: none;
-    padding: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: none;
 }
 
 .footer .nav-link:hover {
-    color: #53b9f5;
+  color: #53b9f5;
 }
 
 .footer .btn {
-    display: block;
-    margin: 0 auto;
-    border-color: #ffffff;
-    border-radius: 0;
-    font-size: 14px;
-    padding: 0.4rem 0.8rem;
+  display: block;
+  margin: 0 auto;
+  padding: 0.4rem 0.8rem;
+  border-color: #ffffff;
+  border-radius: 0;
+  font-size: 14px;
 }
 
 .btn-white {
-    background: none;
-    font-family: Roboto, sans-serif;
-    text-transform: uppercase;
-    color: #ffffff;
+  background: none;
+  font-family: Roboto, sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .btn-white:hover {
-    background: #ffffff;
-    color: #000000;
+  background: #ffffff;
+  color: #000000;
 }
+
+@media (min-width: 320px) and (max-width: 539px) {
+    .header .nav {
+      display: block;
+      font-size: 10px;
+    }
+
+    .header .nav-link {
+      padding: 0.1rem 1rem;
+    }
+
+    .social-network {
+      align-items: flex-start;
+    }
+
+    .phone {
+      margin-left: 10px;
+      font-size: 10px;
+    }
+
+    .logo img {
+      width: 180px;
+    }
+
+    .main h1 {
+      font-size: 19px;
+    }
+
+    .main h2 {
+      font-size: 14px;
+    }
+    
+    .style-title {
+      font-size: 20px;
+    }
+
+    .style-help-info {
+      margin: 20px;
+    }
+
+    .service-progress-title {
+      font-size: 20px;
+    }
+
+    .service-progress-description-block {
+      margin: 20px 0;
+    }
+
+    .service-progress-item-description {
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    .footer .nav-link {
+      font-size: 12px;
+    }
+}
+
+@media (min-width: 540px) and (max-width: 719px) {
+    .header .nav {
+      font-size: 10px;
+    }
+
+    .header .nav-link {
+      padding: 0.5rem 0.2rem;
+    }
+
+    .phone {
+      margin-left: 10px;
+      font-size: 10px;
+    }
+
+    .style-help-info {
+      margin: 20px;
+    }
+
+    .service-progress-description-block {
+      margin: 20px 0;
+    }
+
+   .service-packages .card-deck {
+      flex-direction: column;
+    }
+
+    .service-packages .card-deck .card {
+      margin-bottom: 20px;
+    }
+
+    .card-price-old:before {
+      width: 20%;
+    }
+}
+
+@media (min-width: 720px) and (max-width: 959px) {
+    .header .nav {
+      font-size: 10px;
+    }
+
+    .header .nav-link {
+      padding: 0.5rem 0.2rem;
+    }
+
+    .phone {
+      margin-left: 10px;
+      font-size: 10px;
+    }
+
+    .style-help-info {
+      margin: 50px 80px;
+    }
+
+    .service-progress-description-block {
+      margin: 20px 0;
+    }
+
+    .service-packages .card-deck {
+      flex-direction: column;
+    }
+
+    .service-packages .card-deck .card {
+      margin-bottom: 20px;
+    }
+
+    .card-price-old:before {
+      width: 20%;
+    }
+}
+
+@media (min-width: 960px) and (max-width: 1199px) {
+    .header .nav {
+      font-size: 14px;
+    }
+
+    .header .nav-link {
+      padding: 0.5rem 0.2rem;
+    }
+
+    .phone {
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    .card-price-old:before {
+      width: 50%;
+    }
+}
+
