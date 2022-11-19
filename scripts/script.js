@@ -6,9 +6,15 @@ $(window).scroll(function() {
     }
 });
 
-document.getElementById("scroll-up").onclick = function () {
-    document.getElementById("main").scrollIntoView({behavior: "smooth"});
-}
+$(document).ready(function(){
+    $("#scroll-up").on('click', function() {
+        $('html, body').animate({
+            scrollTop: $("#main").offset().top
+        }, 1000);
+    });
+});
+
+
 
 
 

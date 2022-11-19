@@ -155,6 +155,10 @@ button:focus {
   margin-bottom: 100px;
 }
 
+.style-help .container {
+  padding: 0;
+}
+
 .style-title {
   margin-top: 50px;
   font-family: Oranienbaum, sans-serif;
@@ -301,7 +305,7 @@ button:focus {
 .prices {
   display: block;
   margin: 0 auto 50px auto;
-  width: 50%;
+  width: 80px;
   font-size: 16px;
 }
 
@@ -330,8 +334,9 @@ button:focus {
 .card-price-old:before {
   border-bottom: 2px solid #f2003a;
   position: absolute;
+  left: 0;
   content: "";
-  width: 35%;
+  width: 100%;
   height: 50%;
   transform: rotate(-7deg);
 }
@@ -345,6 +350,20 @@ button:focus {
 .card-item-block .btn {
   width: 100%;
   padding: 15px 25px;
+}
+
+.card-item-block .btn:before {
+  position: absolute;
+  right: 120px;
+  left: 0;
+	font-family: FontAwesome;
+	content:"\f07a";
+  opacity: 0;
+  transition: all .5s;
+}
+
+.card-item-block .btn:hover:before {
+  opacity: 1;
 }
 
 .btn-purple {
@@ -514,10 +533,6 @@ button:focus {
     .service-packages .card-deck .card {
       margin-bottom: 20px;
     }
-
-    .card-price-old:before {
-      width: 20%;
-    }
 }
 
 @media (min-width: 720px) and (max-width: 959px) {
@@ -549,10 +564,6 @@ button:focus {
     .service-packages .card-deck .card {
       margin-bottom: 20px;
     }
-
-    .card-price-old:before {
-      width: 20%;
-    }
 }
 
 @media (min-width: 960px) and (max-width: 1199px) {
@@ -569,8 +580,8 @@ button:focus {
       font-size: 14px;
     }
 
-    .card-price-old:before {
-      width: 50%;
+    .service-packages h3 {
+      font-size: 1.25rem;
     }
 }
 
